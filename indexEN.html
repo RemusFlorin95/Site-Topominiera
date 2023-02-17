@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Topo Miniera</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="generalstyle.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#cinesuntem" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Who we are</a>
+    <a href="#cuceneocupam" class="w3-bar-item w3-button w3-padding-large w3-hide-small">What we do</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Romana</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#cinesuntem" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Cine Suntem</a>
+  <a href="#cuceneocupam" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Cu Ce Ne ocupam</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mai multe</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center fade">
+    <img src="Imagini/fundal/img_01.jpg" >
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+       <div class="logo"> <img src="Imagini/fundal/logo.png" alt="img1"></div>
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center fade">
+    <img src="Imagini/fundal/img_02.jpg">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <div class="logo"> <img src="Imagini/fundal/logo.png" alt="img2"></div>
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center fade">
+    <img src="Imagini/fundal/img_03.jpg" >
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <div class="logo"> <img src="Imagini/fundal/logo.png" alt="img3"></div>
+      </div>
+  </div>
+
+
+  <div class="videodiv">
+    <video width="400" controls>
+      <source src="./video/prezentare.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+  <!-- Cine Suntem -->
+  <div class="w3-container w3-content w3-center w3-padding-64 " style="max-width:800px" id="cinesuntem">
+    <h1 class="w3-wide w3-center"><b> Who we are?</b></h1>
+        <p class="w3-justify">TOPO MINIERA performs cadastre, topography, bathymetry, photogrammetry and laser scanning activities both nationally and internationally. Established in 2009, TOPO MINIERA is today an appreciated surveying and cadastral company. The quality of our activities is given by the use of state-of-the-art technical systems, as well as the high qualification of our staff.</p>
+        <br>
+        <p class="w3-left"><strong>The company provides complete solutions for a wide range of activities such as:</strong>  </p>
+  <ul class="w3-ul w3-left" style="text-align:left">
+    <li>Cadastral Works</li>
+    <li>Engineering Surveying Works</li>
+    <li>Bathymetry works</li>
+    <li>Mining Works</li>
+    <li>Environmental Protection Works</li>
+    <li>Orthophotoplanes</li>
+    <li>Digital terrain model construction</li>
+    <li>Potential Services for a Wind Farm Project</li>
+  </ul>
+
+
+
+
+  </div>
+  <div class="w3-row w3-padding-32">
+    <div class="w3-third">
+      <p>Photogrammetry</p>
+      <img id= "myImg1" src="Imagini/prezentare/galati.jpg" class="w3-round w3-margin-bottom" alt="Ortofotogrametrie" onclick ="myModal(1)" style="width:60%"> 
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+    </div>
+    <div class="w3-third">
+      <p>Point cloud of an oil installation</p>
+      <img id= "myImg2" src="Imagini/prezentare/POlyworks.jpg" class="w3-round w3-margin-bottom" alt="Nor de Puncte" onclick ="myModal(2)" style="width:60%">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+    </div>
+    <div class="w3-third">
+      <p>Bathymetry</p>
+      <img id= "myImg3" src="Imagini/prezentare/Techirgiol2.jpg" class="w3-round" alt="Batimetrie" onclick ="myModal(3)" style="width:60%">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Cu ce ne ocupam -->
+  <div class="w3-black " id="cuceneocupam">
+    
+   
+    
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h1 class="w3-wide w3-center"><b>What do we do?</b></h1>
+      <h2 class="w3-cemter " style="text-decoration:underline;">Our company offers complete services for a wide range of works:</h2>
+
+      <ul class="w3-ul">
+          <li>Cadastral Works </li>
+          <li>Engineering Surveying Works</li>
+          <li>Bathymetry works</li>
+          <li>Works in the Mining Field</li>
+          <li>Environmental Protection Works</li>
+          <li>Orthophotoplanes</li>
+          <li>Digital Terrain Model Construction (DTM,DEM)</li>
+          <li>Potential Services for a Wind Farm Project</li>
+          <li>BIM modelling</li>
+      </ul>
+
+      <h2 class="w3-cemter " style="text-decoration:underline;">Executed Works</h2>
+     <br>
+      <h3 class="w3-cemter " style="text-decoration:underline;">Topography and Cadastre:</h3>
+        <ul class="w3-ul">
+            <li>Documents for registration in the land register</li>
+            <li>Situation plans</li>
+            <li>Precision level</li>
+            <li>Check works in progress</li>
+            <li>Digital Terrain Model</li>
+            <li>Contour lines</li>
+            <li>Time tracking of works</li>
+            <li>Volume calculations</li>
+            <li>Transverse and longitudinal profiles</li>
+            <li>Level and facade plans</li>
+            <li>Accurate coordinate determination</li>
+        </ul>
+<br>
+        <h3 class="w3-cemter " style="text-decoration:underline;">Bathymetry:</h3>
+        <ul class="w3-ul">
+            <li>Depth studies</li>
+            <li>Determination of submerged landform</li>
+            <li>Volume calculations</li>
+            <li>Monitoring of submerged excavations</li>
+            <li>Cross and longitudinal profiles</li>
+            <li>Checks before and after dredging</li>
+            <li>Determination of the quantities of deposited silt</li>
+            <li>Flood risk maps</li>
+        </ul>
+<br>
+        <h3 class="w3-cemter " style="text-decoration:underline;">Aerial measurements - UAV technology:</h3>
+        <ul class="w3-ul">
+            <li>High resolution orthophotos</li>
+            <li>Digital terrain model generation</li>
+        </ul>
+    </div>
+
+    
+
+  </div>
+
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Adress: Street Despot Vodă nr. 2, Constanța 900270
+        <br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone Number: 0785599799
+        <br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: office@topominiera.ro<br>
+      </div>
+      <div class="w3-col m6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.153973929043!2d28.60138951551427!3d44.16268587910714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae579ed16eaa7%3A0x8d8dda85156dbbfe!2sS.C.%20Topo%20Miniera%20S.R.L.!5e0!3m2!1sro!2sro!4v1650952385615!5m2!1sro!2sro"  style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.facebook.com/TopoMiniera" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <a href="https://www.youtube.com/channel/UC-H1M1HcuamM8MT3UoUccmQ" target="_blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<!-- THIS WEBSITE WAS MADE BY COVALIU REMUS FLORIN-->
+
+<script src="index.js"></script>
+
+</body>
+</html>

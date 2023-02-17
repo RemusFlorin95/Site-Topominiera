@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<title>Topo Miniera</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="generalstyle.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Acasa</a>
+    <a href="#cinesuntem" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Cine Suntem</a>
+    <a href="#cuceneocupam" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Cu Ce Ne ocupam</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+    <a href="indexEN.html" class="w3-bar-item w3-button w3-padding-large">English</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#cinesuntem" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Cine Suntem</a>
+  <a href="#cuceneocupam" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Cu Ce Ne ocupam</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mai multe</a>
+
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center fade">
+    <img src="Imagini/fundal/img_01.jpg" >
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+       <div class="logo"> <img src="Imagini/fundal/logo.png" alt="img1"></div>
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center fade">
+    <img src="Imagini/fundal/img_02.jpg">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <div class="logo"> <img src="Imagini/fundal/logo.png" alt="img2"></div>
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center fade">
+    <img src="Imagini/fundal/img_03.jpg" >
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <div class="logo"> <img src="Imagini/fundal/logo.png" alt="img3"></div>
+      </div>
+  </div>
+
+<div class="videodiv">
+  <video width="400" controls>
+    <source src="./video/prezentare.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+
+  <!-- Cine Suntem -->
+  <div class="w3-container w3-content w3-center w3-padding-64 " style="max-width:800px" id="cinesuntem">
+    <h1 class="w3-wide w3-center"><b> Cine suntem?</b></h1>
+        <p class="w3-justify">TOPO MINIERA desfasoara activitati de cadastru, topografie, batimetrie, fotogrammetrie si scanare laser atat la nivel national,cat si international.
+
+        Infiintata in anul 2009, TOPO MINIERA este astazi o firma de topografie si cadastru apreciata. Calitatea activitatilor noastre este data de utilizarea unor sisteme tehnice de ultima generatie, precum si de o inalta calificare a personalului nostru
+        </p>
+        <br>
+        <p class="w3-left"><strong>Firma asigura solutii complete pentru o gama larga de activitati precum:</strong>  </p>
+  <ul class="w3-ul w3-left" style="text-align:left">
+    <li>Lucrari Cadastrale</li>
+    <li>Lucrari Topografie Inginerease</li>
+    <li>Lucrari de Batimetrie</li>
+    <li>Lucrari in Domeniul Miner</li>
+    <li>Lucrari in Domeniul Protectiei Mediului</li>
+    <li>Intocmire Ortofotoplanuri</li>
+    <li>Constructie model digital al terenului</li>
+    <li>Potentiale Prestari Servicii in vederea realizarii unui proiect pentru Parc Eolian</li>
+  </ul>
+
+
+
+
+  </div>
+  <div class="w3-row w3-padding-32">
+    <div class="w3-third">
+      <p>Fotogrammetrie</p>
+      <img id= "myImg1" src="Imagini/prezentare/galati.jpg" class="w3-round w3-margin-bottom" alt="Ortofotogrametrie" onclick ="myModal(1)" style="width:60%"> 
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+    </div>
+    <div class="w3-third">
+      <p>Nor de puncte a unei instalatii petroliere</p>
+      <img id= "myImg2" src="Imagini/prezentare/POlyworks.jpg" class="w3-round w3-margin-bottom" alt="Nor de Puncte" onclick ="myModal(2)" style="width:60%">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+    </div>
+    <div class="w3-third">
+      <p>Batimetrie</p>
+      <img id= "myImg3" src="Imagini/prezentare/Techirgiol2.jpg" class="w3-round" alt="Batimetrie" onclick ="myModal(3)" style="width:60%">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Cu ce ne ocupam -->
+  <div class="w3-black " id="cuceneocupam">
+    
+   
+    
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h1 class="w3-wide w3-center"><b> Cu ce ne ocupam?</b></h1>
+      <h2 class="w3-cemter " style="text-decoration:underline;">Compania Noastra Ofera Servicii complete pentru o gama larga de lucrari:</h2>
+
+      <ul class="w3-ul">
+          <li>Lucrari Cadastrale </li>
+          <li>Lucrari de Topografie Inginereasca</li>
+          <li>Lucrari de Batimetrie</li>
+          <li>Lucrari in Domeniul Minier</li>
+          <li>Lucrari in Domeniul Protectiei Mediului</li>
+          <li>Intocmire Ortofotoplanuri</li>
+          <li>Constructie model digital al terenului (DTM,DEM)</li>
+          <li>Potentiale Prestari Servicii in vederea realizarii unui proiect pentru Parc Eolian</li>
+          <li>BIM modeling</li>
+      </ul>
+
+      <h2 class="w3-cemter " style="text-decoration:underline;">Lucrari Executate</h2>
+     <br>
+      <h3 class="w3-cemter " style="text-decoration:underline;">Topografie si Cadastru:</h3>
+        <ul class="w3-ul">
+            <li>Documentatii de inscriere in cartea funciara</li>
+            <li>Planuri de situatie</li>
+            <li>Dezmembrari, comasari</li>
+            <li>Nivelment de precizie</li>
+            <li>Verificare lucrari in executie</li>
+            <li>Trasari</li>
+            <li>Model Digital al Terenului</li>
+            <li>Curbe de nivel</li>
+            <li>Urmarirea in timp a lucrarilor</li>
+            <li>Calcule de volum</li>
+            <li>Determinari cote</li>
+            <li>Profile transversale si longitudinale</li>
+            <li>Planuri de nivel si planuri fatade</li>
+            <li>Determinare cu precizie coordonate</li>
+        </ul>
+<br>
+        <h3 class="w3-cemter " style="text-decoration:underline;">Batimetrie:</h3>
+        <ul class="w3-ul">
+            <li>Studii de adancime</li>
+            <li>Determinarea formei de relief submers</li>
+            <li>Calcule de volum</li>
+            <li>Monitorizarea excavatiilor submerse</li>
+            <li>Profile tramsversale si longitudinale</li>
+            <li>Verificari inainte si dupa dragare</li>
+            <li>Determinarea cantitatilor de aluviuni depuse</li>
+            <li>Harti de risc la inundatie</li>
+        </ul>
+<br>
+        <h3 class="w3-cemter " style="text-decoration:underline;">Masuratori aeriene - Tehnologie UAV:</h3>
+        <ul class="w3-ul">
+            <li>Ortofotoplanuri de inalta rezolutie</li>
+            <li>Generare model digital al terenului</li>
+        </ul>
+    </div>
+
+    
+
+  </div>
+
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Adresa: Strada Despot Vodă nr. 2, Constanța 900270
+        <br>
+        <i class="fa fa-phone" style="width:30px"></i> Numar de telefon: 0785599799
+        <br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: office@topominiera.ro<br>
+      </div>
+      <div class="w3-col m6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.153973929043!2d28.60138951551427!3d44.16268587910714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae579ed16eaa7%3A0x8d8dda85156dbbfe!2sS.C.%20Topo%20Miniera%20S.R.L.!5e0!3m2!1sro!2sro!4v1650952385615!5m2!1sro!2sro"  style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.facebook.com/TopoMiniera" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <a href="https://www.youtube.com/channel/UC-H1M1HcuamM8MT3UoUccmQ" target="_blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<!-- THIS WEBSITE WAS MADE BY COVALIU REMUS FLORIN-->
+
+<script src="index.js"></script>
+
+</body>
+</html>
